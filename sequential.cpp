@@ -3,7 +3,7 @@ unsigned long n=0; // counter permutations
 
 unsigned long tmpx;	// temporary variable, specifies if current permutation resulted in more extreme
 // 					   test statistic or not.			
-double mle,d1,d2,d3,mle_adaptive; // tempory variables
+double mle,d1,d2,d3,mle_adaptive; // temporary variables
 
 
 double tau_1=0; // tau_1 as described in reference
