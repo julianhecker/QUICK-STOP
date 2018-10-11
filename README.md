@@ -1,2 +1,2 @@
-# SeqPerm
-Implementation of a nearly optimal sequential testing procedure for permutation-based association testing
+# QUICK-STOP 
+Implementation of a nearly optimal Stopping rule for randomized tests
