@@ -1,7 +1,7 @@
 unsigned long ctr=0; // counter # successes
-unsigned long n=0; // counter permutations
+unsigned long n=0; // counter permutations/simulations
 
-unsigned long tmpx;	// temporary variable, specifies if current permutation resulted in more extreme
+unsigned long tmpx;	// temporary variable, specifies if current permutation/simulation resulted in more extreme
 // 					   test statistic or not.			
 double mle,d1,d2,d3,mle_adaptive; // temporary variables
 
@@ -18,9 +18,9 @@ int delta=0; // decision variable as defined in reference
 while(delta==0)
 {
 	               #############################################
-				   tmpx=new_permuted_stat_greater_or_equal(...);  // arbitrary function that performs permutation and compares the 
-				   // 												 permuted test statistic with the observed test statistic. Returns 1
-				   //												 if the permuted test statistic is greater or equal and 0 otherwise
+				   tmpx=new_permuted_simulated_stat_greater_or_equal(...);  // arbitrary function that performs permutation/simulation and compares the 
+				   // 												 permuted/simulated test statistic with the observed test statistic. Returns 1
+				   //												 if the permuted/simulated test statistic is greater or equal and 0 otherwise
 				   #############################################
 				   n++;
 				   if(n==1){ adaptive_stat=log(0.5); } // initial value for p_1 in reference
@@ -30,7 +30,7 @@ while(delta==0)
 					 adaptive_stat+=bin_log(tmpx,(unsigned long)1,mle_adaptive); 
 				   }
 				   ctr+=tmpx;
-				   mle=((double)(ctr))/((double)n); // current MLE estimate := #successes/#permutations
+				   mle=((double)(ctr))/((double)n); // current MLE estimate := #successes/#permutations(/#simulations)
 				   
 				   // Update of objects tau_1 and tau_2
 				   d1=bin_log(ctr,n,mle);
