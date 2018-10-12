@@ -198,10 +198,10 @@ int main(int argc, char * argv[])
 {
 
         if(argc!=7){ cout << "incorrect number of parameters."<<endl; exit(1);}
-		double p_true =atof(argv[1]);//0.0000001;
-		double p_cut1  =atof(argv[2]);//0.000001;
-		double p_cut2  =atof(argv[3]);//0.000001;
-		double alpha  =atof(argv[4]);//0.00000001;
+		double p_true =atof(argv[1]);
+		double p_cut1  =atof(argv[2]);
+		double p_cut2  =atof(argv[3]);
+		double alpha  =atof(argv[4]);
 		int seed=atoi(argv[5]);
 		unsigned long repsp=atoi(argv[6]);
 		
@@ -284,7 +284,7 @@ int main(int argc, char * argv[])
 				   {
 					 stop=1;
 				   }
-				   //if(n%10000000==0) cout << n<<endl;
+				   
 				  
 				}
 				overallperms+=(double)n;
