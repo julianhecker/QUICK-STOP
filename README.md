@@ -1,8 +1,14 @@
+#############################################################################
 sequential.cpp:
-Implementation of a nearly optimal Stopping rule for randomized tests
+example code for QUICK-STOP: a nearly optimal Stopping rule for randomized tests
 
+#############################################################################
+QUICK-STOP tool:
 
-Usage of the QUICK-STOP tool:
+The QUICK-STOP tool simulates Bernoulli draws with specified success parameter. The tool can be used to
+estimate the number of permutations/simulations that are required by QUICK-STOP.
+
+Run QUICK-STOP tool:
 
  ./quick_stop p p_1 p_2 alpha seed number_of_replications
  
