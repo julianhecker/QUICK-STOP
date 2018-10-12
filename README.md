@@ -1,8 +1,10 @@
 #############################################################################
+
 sequential.cpp:
 example code for QUICK-STOP: a nearly optimal Stopping rule for randomized tests
 
 #############################################################################
+
 QUICK-STOP tool:
 
 The QUICK-STOP tool simulates Bernoulli draws with specified success parameter. The tool can be used to
