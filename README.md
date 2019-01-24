@@ -3,7 +3,7 @@
 sequential.cpp:
 example code for QUICK-STOP: a nearly optimal stopping rule for randomized tests
 
-NOTE: if an estimated p-value is required, the current MLE p-value estimate at the stopping point could be utilized if a sufficient large number of permutations/simulations was computed.
+NOTE: if an estimated p-value is required, the current MLE p-value estimate after stopping could be used.
 
 #############################################################################
 
